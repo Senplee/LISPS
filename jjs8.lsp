@@ -1,0 +1,77 @@
+
+;;/////////////////////////////////////////////////////////////////////////////////////
+(defun C:TT3(/ aaa bbb ccc) ; 선택한 글자를 도면내에서 찾아서 레이어를 교체함..^^
+	(prompt "선택한 글자를 도면내에서 찾아서 레이어를 교체함..^^")
+	(setq aaa(getstring "\n\t Find of Text String ? : "))
+	(if (or (= aaa nil)(= aaa ""))
+		(setq aaa (cdr (assoc 1 (entget (car (entsel "Select of Text : "))))))
+	)
+	(setq bbb (ssget "X" (list (cons 0 "TEXT") (cons 1 aaa) )))
+	(setq ccc (getstring "\n\t Typing Layer-Name of Change : "))
+	(command "change" bbb "" "p" "layer" ccc "")
+;	(command "select" bbb "")
+)
+
+(defun C:TT4(/ aaa bbb ccc) ; 선택한 글자를 도면내에서 찾아서 레이어를 교체함..(PLAN)^^
+	(prompt "선택한 글자를 도면내에서 찾아서 레이어를 교체함(PLAN)..^^")
+	(setq aaa(getstring "\n\t Find of Text String <PLAN>? : "))
+	(if (or (= aaa nil)(= aaa ""))
+		(setq aaa (cdr (assoc 1 (entget (car (entsel "Select of Text <PLAN>: "))))))
+	)
+	(setq bbb (ssget "X" (list (cons 0 "TEXT") (cons 1 aaa) )))
+;	(setq ccc (getstring "\n\t Typing Layer-Name of Change : "))
+	(command "change" bbb "" "p" "layer" "plan" "")
+;	(command "select" bbb "")
+)
+
+
+;;/////////////////////////////// 도면번호 기입.
+(defun c:dwgn ()(dwgn_main 1))
+(defun c:dwgn2 ()(dwgn_main nil))
+
+(defun dwgn_main ( dwgn_sp / a b c d e ed i b1 z) ; DWGN_KEY, DWGN_KEY2
+  (if dwgn_sp (setq z " - ")(setq z "-"))
+;  (ai_sysvar '(("cmdecho" . 0)))
+  (if (= dwgn_key nil)(setq dwgn_key "EP"))
+  (if (= dwgn_key2 nil)(setq dwgn_key2 "01"))
+  (prompt "\n\t Drawing-Section Symbol is ?<")
+  (prin1 dwgn_key)
+  (setq a (getstring "> :"))
+  (if (or (= a nil)(= a ""))
+    (setq dwgn_key dwgn_key)
+	(setq dwgn_key (strcase a))
+  )
+  (prompt "\t Enter Start-Number is ?<")
+  (prin1 dwgn_key2)
+  (setq b (getstring "> :"))
+  (if (or (= b nil)(= b ""))
+    (setq b dwgn_key2)
+  )
+  (setq n (strlen b))
+  (setq i 0)
+  (setq b (- (atoi b) 1))
+  (prompt "\n\t Select of Drawing-Number's Text ?:")
+  (while (setq c (entsel))
+    (setq b (1+ b))
+	(setq b1 (itoa b))
+	(if (= n 2)
+	  (if (= 1 (strlen b1))(setq b1 (strcat "0" b1)))
+	  (if (= n 3)
+	    (if (= 1 (strlen b1))(setq b1 (strcat "00" b1))
+		  (if (= 2 (strlen b1))(setq b1 (strcat "0" b1)))
+		)
+	  )
+	)
+    (setq d (strcat dwgn_key z b1))
+	(setq e (cdr (assoc 1 (setq ed (entget (car c))))))
+	(setq ed (subst (cons 1 d)(assoc 1 ed) ed))
+	(entmod ed)
+    (prompt "\n\t Next Drawing-Number's Text ?:")
+  )
+  (setq dwgn_key2 b1)
+;  (ai_sysvar nil)
+
+)
+
+;;////////////////////// 끝
+

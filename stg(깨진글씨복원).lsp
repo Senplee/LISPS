@@ -1,0 +1,57 @@
+;; Style Change  --------------->   st
+
+(DEFUN C:stg()  
+;(defun stylech ()
+
+   (setvar "cmdecho" 0)
+   (command "style" "standard" "±¼¸²" "" "" "" "" "")
+   (prompt "\n This Program is change STYLE  -->  ±¼¸²À¸·Î ÀüÈ¯  \n ")
+   (setq sss(ssget "X" '((0 . "TEXT"))))
+   (setq num (sslength sss))
+   (setq i 0)
+ (repeat num
+   (setq ent (entget (ssname sss i)))
+   (setq i (1+ i))
+   (setq ass (assoc 0 ent))
+ (if
+      (= "TEXT" (cdr ass))
+ (progn
+	  (setq ass1 (assoc 7 ent))
+	  (setq co (cons 7 "standard"))
+	  (setq entl (subst co ass1 ent))
+	  (entmod entl)
+)
+)
+)
+	 (prompt "\n")
+	 (princ num) (prompt " TEXT changed ")
+	 (setvar "cmdecho" 0) (princ)
+)
+
+
+
+(defun c:aa()
+   (setq n 0)
+(setq ss (ssget))
+(setq id (load_dialog "aaa.dcl"))
+(new_dialog "aaa" id)
+(mode_tile "edit" 2)
+(action_tile "edit" "(setq ed $value)")
+(setq ok (start_dialog))
+(if (= ok 1)
+   (draw)
+   )
+(unload_dialog id)
+)
+(defun draw()
+(setq sl (sslength ss))
+(repeat sl
+   (setq sn (ssname ss n))
+   (setq get (entget sn))
+   (setq as (assoc 1 get))
+   (setq con (cons 1 ed))
+   (setq sub (subst con as get))
+   (entmod sub)
+   (setq n (1+ n))
+   )
+)

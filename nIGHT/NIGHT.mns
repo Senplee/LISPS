@@ -1,0 +1,66 @@
+//
+//      AutoCAD menu file - D:\Projects\AutoLISP\Working\NIGHT.mnu
+//
+
+***MENUGROUP=NIGHT
+
+***POP1
+ID_NMTNIGHT    [NI&GHT]
+ID_NMMLAYOFF   [도면층 끄기(&F)]^C^CMON_LAYER_OFF 
+ID_NMMLAYONE   [도면층 통합(&O)]^C^CMON_LAYER_ONE 
+ID_NMMLAYALL   [모든 도면층 표시(&S)]^C^CMON_LAYER_ALL 
+               [--]
+ID_NMMCVPROP   [속성 전환(&V)]^C^CMON_CONV_PROP 
+ID_NMMNPLUS    [숫자의 합(&P)]^C^CMON_PLUS_NUMB 
+ID_NMMMSUM     [숫자의 곱.합(&M)]^C^CMON_MULTI_SUM 
+ID_NMMLJOIN    [선 연결(&J)]^C^CMON_LINE_JOIN 
+               [--]
+ID_NMMRCLOUD   [개정영역 그리기(&R)]^C^CMON_REV_CLOUD 
+               [--]
+ID_NMMHELP     [도움말(&H)]^C^C^P(night_help "HID_NIGHT_TOP")(princ) ^P
+ID_NMMABOUT    [NIGHT™ 정보(&A)]^C^C^P(night_about)(princ) ^P
+
+***TOOLBARS
+**TB_NIGHT_TOOLBAR
+**NIGHT
+ID_NTTNIGHT    [_Toolbar("NIGHT", _Floating, _Show, 88, 190, 1)]
+ID_NTBLAYOFF   [_Button("도면층 끄기", "NIGHT_AAD.BMP", "NIGHT_AAD.BMP")]^C^CMON_LAYER_OFF 
+ID_NTBLAYONE   [_Button("도면층 통합", "NIGHT_AAE.BMP", "NIGHT_AAE.BMP")]^C^CMON_LAYER_ONE 
+ID_NTBLAYALL   [_Button("모든 도면층 표시", "NIGHT_AAF.BMP", "NIGHT_AAF.BMP")]^C^CMON_LAYER_ALL 
+               [--]
+ID_NTBCVPROP   [_Button("속성 전환", "NIGHT_AAB.BMP", "NIGHT_AAB.BMP")]^C^CMON_CONV_PROP 
+ID_NTBNPLUS    [_Button("숫자의 합", "NIGHT_AAC.BMP", "NIGHT_AAC.BMP")]^C^CMON_PLUS_NUMB 
+ID_NTBLJOIN    [_Button("선 연결", "NIGHT_AAA.BMP", "NIGHT_AAA.BMP")]^C^CMON_LINE_JOIN 
+               [--]
+ID_NTBRCLOUD   [_Button("개정영역 그리기", "NIGHT_RCD.BMP", "NIGHT_RCD.BMP")]^C^CMON_REV_CLOUD 
+               [--]
+ID_NTBHELP     [_Button("도움말", "NIGHT_000.BMP", "NIGHT_000.BMP")]^C^C^P(night_help "HID_NIGHT_TOP")(princ) ^P
+ID_NTBABOUT    [_Button("NIGHT™ 정보", "NIGHT_001.BMP", "NIGHT_001.BMP")]^C^C^P(night_about)(princ) ^P
+
+
+***HELPSTRINGS
+ID_NMMLAYOFF   [MON_LAYER_OFF：선택한 개체가 가진 도면층 이외의 도면층을, 끄기 속성으로 바꿉니다.]
+ID_NTBLAYOFF   [MON_LAYER_OFF：선택한 개체가 가진 도면층 이외의 도면층을, 끄기 속성으로 바꿉니다.]
+ID_NMMLAYALL   [MON_LAYER_ALL：모든 도면층을, 화면상에 나타나도록 설정합니다.]
+ID_NTBLAYALL   [MON_LAYER_ALL：모든 도면층을, 화면상에 나타나도록 설정합니다.]
+ID_NTBLJOIN    [MON_LINE_JOIN：두개의 선을 차례로 선택해서, 하나의 선으로 만듭니다.]
+ID_NMMLJOIN    [MON_LINE_JOIN：두개의 선을 차례로 선택해서, 하나의 선으로 만듭니다.]
+ID_NMMLAYONE   [MON_LAYER_ONE：선택한 개체들의 기본 속성들을 유지한 채, 하나의 도면층으로 만듭니다.]
+ID_NTBMSUM     [MON_MULTI_SUM：선택된 문자열의 곱을 출력하고, 열별로 더한값을 출력합니다.]
+ID_NTBLAYONE   [MON_LAYER_ONE：선택한 개체들의 기본 속성들을 유지한 채, 하나의 도면층으로 만듭니다.]
+ID_NMMRCLOUD   [MON_REV_CLOUD：도면의 개정부분을 표시하기위한 구름형태 생성합니다.]
+ID_NMMCVPROP   [MON_CONV_PROP：선택한 개체들의 기본 속성들을, 대상 개체가 가진 속성으로 전환합니다.]
+ID_NTBRCLOUD   [MON_REV_CLOUD：도면의 개정부분을 표시하기위한 구름형태 생성합니다.]
+ID_NTBNPLUS    [MON_PLUS_NUMB：선택한 문자열(정수/실수형태)의 합을 구하고, 그 값을 출력합니다.]
+ID_NTBCVPROP   [MON_CONV_PROP：선택한 개체들의 기본 속성들을, 대상 개체가 가진 속성으로 전환합니다.]
+ID_NMMMSUM     [MON_MULTI_SUM：선택된 문자열의 곱을 출력하고, 열별로 더한값을 출력합니다.]
+ID_NMMNPLUS    [MON_PLUS_NUMB：선택한 문자열(정수/실수형태)의 합을 구하고, 그 값을 출력합니다.]
+ID_NTBHELP     [NIGHT™ 프로젝트의 도움말을 표시합니다.]
+ID_NMMHELP     [NIGHT™ 프로젝트의 도움말을 표시합니다.]
+ID_NTBABOUT    [NIGHT™ 프로젝트의 저작권및 사용자 정보를 표시합니다.]
+ID_NMMABOUT    [NIGHT™ 프로젝트의 저작권및 사용자 정보를 표시합니다.]
+
+//
+//      End of AutoCAD menu file - D:\Projects\AutoLISP\Working\NIGHT.mnu
+//
+

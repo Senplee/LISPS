@@ -1,0 +1,29 @@
+;; ArchiFree 2000 for AutoCAD LT 2000
+; File information ON/OFF
+OFF           ; If this is OFF, file_information not display on screen.
+;;
+; Pen Width & Color
+0.25mm     white
+0.35mm     magenta
+0.50mm     red
+;;
+; Initial  Color  &  Linetype
+           white     continuous
+;;
+; Layer -- Color  &  Linetype setting.
+0          white     continuous  ; origin layer
+CEN        yellow    center      ; center line layer
+COLUMN     red       continuous  ; column layer
+DOOR       magenta   continuous  ; door layer
+HATCH      yellow     continuous  ; brick_wall hatch layer
+TILE       cyan      continuous  ; tile pattern layer & door_sill color
+TREE       green     continuous  ; tree layer
+WALL       magenta   continuous  ; brick_wall layer
+WINDOW     white     continuous  ; window layer & glass_color
+;;
+; Door_Frame's gap with Wall_edge
+5
+;;
+; Window_Frame's gap with Wall_edge
+5
+

@@ -1,0 +1,24 @@
+[tstyle(cihsc,romans whgtxt)]0.6
+[tstyle(cihs,romans whgtxt)]0.8
+[tstyle(cihsw,romans whgtxt)]1.0
+[tstyle(cihdc,romand whgdtxt)]0.8
+[tstyle(cihd,romand whgdtxt)]1.0 
+[tstyle(cihdw,romand whgdtxt)]1.2
+[tstyle(cihtc,romand whtgtxt)]0.8
+[tstyle(ciht,romand whtgtxt)]1.0
+[tstyle(cihtw,romand whtgtxt)]1.2
+[tstyle(cihmc,romand whtmtxt)]0.8
+[tstyle(cihm,romand whtmtxt)]1.0
+[tstyle(cihmw,romand whtmtxt)]1.2
+[tstyle(citbc,πŸ≈¡√º)]0.8 
+[tstyle(citb,πŸ≈¡√º)]1.0
+[tstyle(citbw,πŸ≈¡√º)]1.2
+[tstyle(citgc,±√º≠√º)]0.8
+[tstyle(citg,±√º≠√º)]1.0
+[tstyle(citgw,±√º≠√º)]1.2
+[tstyle(citdc,µ∏øÚ√º)]0.8
+[tstyle(citd,µ∏øÚ√º)]1.0
+[tstyle(citdw,µ∏øÚ√º)]1.2
+[tstyle(citlc,±º∏≤√º)]0.8
+[tstyle(citl,±º∏≤√º)]1.0
+[tstyle(citlw,±º∏≤√º)]1.2

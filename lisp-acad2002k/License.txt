@@ -1,0 +1,18 @@
+***** DocBar-AutoCAD 2000\2000i\2002 dockable document selector *****
+
+License Agreement:
+
+Governing Law-
+
+This agreement shall be governed by the laws of the State of Texas in the USA.
+
+Disclaimer of Warranty-
+
+THIS SOFTWARE AND THE ACCOMPANYING FILES ARE SOLD "AS IS" AND WITHOUT WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.  Because of the various hardware and software environments into which DocBar may be installed, NO WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE IS OFFERED.
+
+Good data processing procedure dictates that any program be thoroughly tested with non-critical data before relying on it. The user must assume the entire risk of using the program.  THE SELLER ASSUMES NO LIABILITY FOR ITS USE OR MISUSE.
+
+Freeware Version-
+
+This version of DocBar is freely distributable in its original form as downloaded from www.cadwerx.net
+

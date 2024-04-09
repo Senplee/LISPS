@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<menu>
+	<item name="&Spelling">_spell</item>
+	<item name="[--]"></item>
+	<group name="Display &Order">
+		<item name="Bring to &Front">(ai_draworder "_f")</item>
+		<item name="Send to &Back">(ai_draworder "_b")</item>
+		<item name="[--]"></item>
+		<item name="Bring &Above Object">(ai_draworder "_a")</item>
+		<item name="Send &Under Object">(ai_draworder "_u")</item>
+	</group>
+	<group name="In&quiry">
+		<item name="&Distance">_dist</item>
+		<item name="&Area">_area</item>
+		<item name="&Mass Properties">_massprop</item>
+		<item name="[--]"></item>
+		<item name="&List">_list</item>
+		<item name="&ID Point">'_id</item>
+		<item name="&Time">'_time</item>
+		<item name="[--]"></item>
+		<item name="&Status">'_status</item>
+		<item name="Set &Variable">'_setvar</item>
+	</group>
+	<item name="[--]"></item>
+	<item name="Open Containing Folder...">DT_OPENCURFOLDER</item>
+	<item name="Config Setting...">DT_CFG</item>
+	<item name="[--]"></item>
+	<item name="Abou&t...">DT_ABOUT</item>
+</menu>

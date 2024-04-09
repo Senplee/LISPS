@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<iDwgTab>
+<config>
+<Item name="Debug level" type="string">1</Item>
+<Item name="Log path" type="string">C:\Temp\</Item>
+<Item name="Docking position" type="numeric">8192</Item>
+<Item name="Menu Y-position" type="numeric">20</Item>
+<Item name="One tab hidden" type="numeric">0</Item>
+<Item name="Thumbnail icon" type="numeric">0</Item>
+<Item name="file icon" type="numeric">1</Item>
+<Item name="version icon" type="numeric">0</Item>
+<Item name="Extention" type="numeric">1</Item>
+<Item name="fixed width" type="numeric">1</Item>
+<Item name="Open sort" type="numeric">0</Item>
+<Item name="Selected Tab font color" type="numeric">8388608</Item>
+<Item name="Unselected Tab font color" type="numeric">8421504</Item>
+<Item name="Selected Tab font style" type="string">-11,0,0,0,700,0,0,0,0,3,2,1,34,Arial</Item>
+<Item name="Unselected Tab font style" type="string">-11,0,0,0,400,0,0,0,0,3,2,1,34,Arial</Item>
+<Item name="Background color effect" type="numeric">6</Item>
+<Item name="Start bgcolor" type="numeric">12632256</Item>
+<Item name="Middle bgcolor" type="numeric">16777215</Item>
+<Item name="End bgcolor" type="numeric">6710886</Item>
+<Item name="Tooltip enable" type="numeric">1</Item>
+<Item name="Short Key" type="numeric">1</Item>
+<Item name="Script path" type="string">C:\Temp\</Item>
+<Item name="Link tab close" type="numeric">0</Item>
+<Item name="Favor open" type="numeric">0</Item>
+<Item name="Zoom extents" type="numeric">1</Item>
+<Item name="Only Modified Dwg Files" type="numeric">0</Item>
+<Item name="Save Password" type="numeric">1</Item>
+<Item name="Web Plugin" type="numeric">1</Item>
+<Item name="Delete Temp files" type="numeric">0</Item>
+<Item name="Server Address" type="string">www.webtabs.co.kr</Item>
+<Item name="Server Port" type="string">8081</Item>
+<Item name="Servlet Object" type="string">/WebTabs/webhard/WebHardServlet</Item>
+<Item name="UserID" type="string">guest</Item>
+<Item name="UserPassword" type="string">038055087067068</Item>
+<Item name="Web Plugins" type="numeric">0</Item>
+<Item name="Cache Path" type="string">C:\Temp\Cache\</Item>
+<Item name="Delete Cache files" type="numeric">0</Item>
+<Item name="Languge" type="string">Korean</Item> 
+<Item name="WebTabs Use" type="numeric">0</Item>
+<Item name="Maintance version" type="numeric">1</Item>
+<Item name="Favorites Use" type="numeric">0</Item>
+<Item name="Show thumbnail" type="numeric">0</Item>
+<Item name="Show desc" type="numeric">1</Item>
+<Item name="Show close button" type="numeric">0</Item>
+<Item name="TempPath" type="string">C:\Temp\</Item>
+</config>
+</iDwgTab>
